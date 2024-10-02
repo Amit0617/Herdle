@@ -1,9 +1,12 @@
 import { defineConfig } from "vite";
 import solid from "vite-plugin-solid";
 
+<<<<<<< HEAD
 // @ts-expect-error process is a nodejs global
 const host = process.env.TAURI_DEV_HOST;
 
+=======
+>>>>>>> 64d1482 (initial setup)
 // https://vitejs.dev/config/
 export default defineConfig(async () => ({
   plugins: [solid()],
@@ -16,6 +19,7 @@ export default defineConfig(async () => ({
   server: {
     port: 1420,
     strictPort: true,
+<<<<<<< HEAD
     host: host || false,
     hmr: host
       ? {
@@ -24,6 +28,8 @@ export default defineConfig(async () => ({
           port: 1421,
         }
       : undefined,
+=======
+>>>>>>> 64d1482 (initial setup)
     watch: {
       // 3. tell vite to ignore watching `src-tauri`
       ignored: ["**/src-tauri/**"],
