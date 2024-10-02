@@ -7,7 +7,6 @@ edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
-<<<<<<< HEAD
 [lib]
 name = "herdle_lib"
 crate-type = ["staticlib", "cdylib", "rlib"]
@@ -21,16 +20,3 @@ tauri-plugin-shell = "2.0.0-rc"
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
 
-=======
-[build-dependencies]
-tauri-build = { version = "1", features = [] }
-
-[dependencies]
-tauri = { version = "1", features = ["shell-open"] }
-serde = { version = "1", features = ["derive"] }
-serde_json = "1"
-
-[features]
-# This feature is used for production builds or when a dev server is not specified, DO NOT REMOVE!!
-custom-protocol = ["tauri/custom-protocol"]
->>>>>>> 64d1482 (initial setup)
